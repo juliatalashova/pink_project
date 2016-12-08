@@ -1,0 +1,137 @@
+@media #{$mobile-width-only} {
+  .side__list {
+    display: none;
+  }
+  .price__list {
+    display: none;
+  }
+}
+.price__list,
+.side__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  order: -1;
+  background: #ffffff;
+}
+.price__item {
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 17px 14px 22px;
+}
+.price__item.price__item--shown {
+  flex-direction: column;
+  align-items: center;
+  background: $bg-darkblue;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 30px;
+  padding: 19px 0;
+  border-top: none;
+  border-bottom: none;
+}
+.price__item-name {
+  font-weight: 700;
+}
+.price__item-amount {
+  font-weight: 100;
+  font-size: 24px;
+  margin: 0;
+}
+.price__item div,
+.side__item div {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.price__item.price__item--active {
+  position: relative;
+  overflow: hidden;
+}
+.corner-ribbon {
+  background-color: $pink-color;
+  width: 125px;
+  height: 30px;
+  white-space: nowrap;
+  position: absolute;
+  text-align: center;
+  font-size: 14px;
+  text-transform: uppercase;
+  left: -30px;
+  top: 15px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+.price__item .icon-yes {
+  fill: #3dc644;
+}
+.price__item .icon-no {
+  fill: #f25b26;
+}
+
+@media #{$tablet-width} {
+  .price__list,
+  .side__list {
+    width: 155px;
+    margin-bottom: 68px;
+  }
+  .side__list {
+    margin-top: 80px;
+  }
+  .side__item div {
+    text-transform: none;
+  }
+  .side__item {
+    border: 1px solid #e5e5e5;
+    padding: 7px 0 7px 15px;
+  }
+  .price__item {
+    padding: 9px 0;
+  }
+  .price__item.price__item--shown {
+    padding: 10px 0;
+  }
+  .price__item .corner-ribbon {
+    display: block;
+    width: 105px;
+    top: 0;
+    left: -39px;
+  }
+  .price__item div {
+    display: none;
+  }
+  .price__item {
+    justify-content: center;
+  }
+}
+@media #{$desktop-width} {
+  .price__list,
+  .side__list {
+    width: 235px;
+    display: block;
+  }
+  .price__item {
+    padding: 15.5px 17px 15.5px 22px;
+  }
+  .side__item {
+    padding: 13.5px 17px 13.5px 22px;
+  }
+  .side__list {
+    margin-top: 98px;
+  }
+  .price__item.price__item--shown {
+    padding: 19px 0;
+  }
+  .price__item  .corner-ribbon {
+    width: 125px;
+    height: 30px;
+    left: -30px;
+    top: 15px;
+  }
+}

@@ -1,0 +1,146 @@
+.popup-block {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 42px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0 15px 20px -10px rgba(1, 0, 1, .3);
+    -moz-box-shadow: 0 15px 20px -10px rgba(1, 0, 1, .3);
+      box-shadow: 0 15px 20px -10px rgba(1, 0, 1, .3);
+  position: fixed;
+  top: 50%;
+}
+.popup-block.popup-block--success {
+  display: none;
+}
+.popup-block.popup-block--fail {
+  display: none;
+}
+.popup-block.popup-block--fail {
+  padding-bottom: 46px;
+}
+.popup-block__wrapper,
+.popup-block__btn-container {
+  width: 280px;
+  margin: 0 auto;
+}
+.popup-block__title {
+  display: block;
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+}
+.popup-block__text {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+  padding: 34px 0;
+}
+.popup-block__text.popup-block__text--success {
+  padding: 28px 0;
+}
+.popup-block__btn-bg {
+  background-color: #f2f2f2;
+  padding: 48px 0 52px 0;
+}
+
+@media #{$tablet-width} {
+  .popup-block {
+    width: 460px;
+    -webkit-box-shadow: 2px 5px 20px 0 rgba(1, 0, 1, .3);
+      -moz-box-shadow: 2px 5px 20px 0 rgba(1, 0, 1, .3);
+        box-shadow: 2px 5px 20px 0 rgba(1, 0, 1, .3);
+  }
+  .popup-block__wrapper,
+  .popup-block__btn-container {
+    width: 320px;
+  }
+  .popup-block__title {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .popup-block__title.popup-block__title--fail {
+    padding: 0 40px;
+  }
+  .popup-block__text {
+    font-size: 18px;
+  }
+  .btn.btn--popup {
+    width: 94%;
+    display: block;
+    margin: 0 auto;
+  }
+  .popup-block.popup-block--success,
+  .popup-block.popup-block--fail {
+    left: 20%;
+  }
+}
+
+@media #{$desktop-width} {
+  .popup-block.popup-block--success {
+    width: 780px;
+  }
+  .popup-block__wrapper {
+    width: 300px;
+  }
+  .popup-block__wrapper.popup-block__wrapper--success,
+  .popup-block__btn-container {
+    width: 460px;
+  }
+  .btn.btn--popup {
+    width: 100%;
+  }
+  .popup-block.popup-block--success {
+    left: 20%;
+  }
+  .popup-block.popup-block--fail {
+    left: 30%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+.fail-message,
+.success-message {
+  @include popup-width;
+  box-shadow: 0 5px 20px rgba(1, 0, 1, .3);
+  display: none;
+}
+.fail-message__wrapper,
+.success-message__wrapper {
+  @include container;
+}
+.success-message__title,
+.fail-message__title {
+  font-weight: 700;
+  color: #000000;
+  text-align: center;
+  display: block;
+  margin-bottom: 35px;
+}
+.fail-message__text,
+.success-message__text {
+  font-size: 14px;
+  text-align: center;
+  margin: 0;
+}
+.btn--popup {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.success-message__btn-bg {
+  background-color: #f2f2f2;
+  margin-top: 36px;
+}
+.success-message__btn-container {
+  @include container;
+}
+*/

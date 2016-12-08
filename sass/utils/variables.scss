@@ -1,0 +1,24 @@
+$bg-darkblue: #1d2631;
+$bg-grey: #f2f2f2;
+$pink-color: #d22856;
+$mobile-width-only: "(max-width: 767px)";
+$tablet-width: "(min-width: 768px)";
+$desktop-width: "(min-width: 1200px)";
+
+@font-face {
+  font-weight: normal;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: url("../fonts/opensans.woff2") format("woff2"),
+      url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: "Open Sans";
+  font-style: normal;
+
+  src: url("fonts/opensansbold.woff2") format("woff2"),
+      url("fonts/opensansbold.woff") format("woff");
+}
